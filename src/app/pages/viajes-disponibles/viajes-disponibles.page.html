@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Viajes disponibles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-text-center" >
+    <ion-label>Revisa los viajes disponibles</ion-label>
+  </div> 
+  <div class="ion-text-center">    
+    <img src="../../../assets/viajes_toma3.png" width="200 px">
+  </div>   
+  <ion-list>
+    <ion-item>
+      <ion-label>Viaje a Ciudad Pirita</ion-label>
+      <ion-button (click)="onClickTomarViaje()" expand="block" fill="clear" shape="round">
+        Tomar viaje
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Viaje a Pueblo Hoja verde</ion-label>
+      <ion-button (click)="onClickTomarViaje()" expand="block" fill="clear" shape="round">
+        Tomar viaje
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>Viaje a Pueblo Paleta</ion-label>
+      <ion-button (click)="onClickTomarViaje()" expand="block" fill="clear" shape="round">
+        Tomar viaje
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>Viaje a Ciudad Carmín</ion-label>
+      <ion-button (click)="onClickTomarViaje()" expand="block" fill="clear" shape="round">
+        Tomar viaje
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>Viaje a Bosque blanco</ion-label>
+      <ion-button (click)="onClickTomarViaje()" expand="block" fill="clear" shape="round">
+        Tomar viaje
+      </ion-button>
+    </ion-item>
+
+
+
+  </ion-list>
+  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+    Volver a Home
+  </ion-button>
+</ion-content>

@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+<ion-title class="ion-text-center">Home</ion-title>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Opciones</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">  <ion-button (click)="onClickLogin()" expand="block" fill="clear" shape="round">
+      Volver al Login</ion-button></ion-content>
+  
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding"></ion-content>
+  </div>
+    <ion-card>
+        <ion-card-header>
+          <ion-card-title>Viajes disponibles</ion-card-title>
+          <ion-card-subtitle>Revisa los viajes disponibles en este momento</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+         Únete a un automovil para acercarte a tu destino
+        </ion-card-content>
+        <ion-button (click)="onClickBuscViajes()" expand="block" fill="clear" shape="round">
+            Busca tu próximo viaje
+          </ion-button>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Inicia un Viaje</ion-card-title>
+          <ion-card-subtitle>Aquí puedes pedir un asiento, que esperas!</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+         Inicia tu viaje y alcanza tu asiento
+        </ion-card-content>
+        <ion-button (click)="onClickIniViaje()" expand="block" fill="clear" shape="round">
+            Iniciar viaje
+          </ion-button>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Listar y Crear Viajes</ion-card-title>
+          <ion-card-subtitle>Mira tus viajes como conductor, támbien puede crear uno</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+         Listar viajes para ver cuantos has hecho este año!
+        </ion-card-content>
+        <ion-button (click)="onClickListViajes()" expand="block" fill="clear" shape="round">
+            Ir a listado de viajes
+          </ion-button>
+      </ion-card>
+
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Listado de viajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-text-center">
+    <img src="../../../assets/lista.avif" width="200 px">
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-label>Viaje a Pueblo Paleta</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Viaje a Bosque blanco</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Viaje a Ciudad Pirita</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Viaje a Ciudad Carmín</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Viaje a Pueblo Hoja verde</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="onClickCrearViaje()" expand="block" fill="clear" shape="round">
+    Crear Viaje
+  </ion-button>
+  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+    Volver a Home
+  </ion-button>
+
+</ion-content>

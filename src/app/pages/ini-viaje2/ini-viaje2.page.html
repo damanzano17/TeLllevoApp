@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Viaje iniciado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-text-center">
+    <img src="../../../assets/sonrisa.jpg" width="450 px">
+  </div>  
+  <ion-button (click)="onClickCanViaje()" expand="block" fill="clear" shape="round">
+    Cancelar viaje
+  </ion-button>
+  <ion-button (click)="onClickAnt()" expand="block" fill="clear" shape="round">
+    Volver a la página anterior
+  </ion-button>
+  <ion-button (click)="onClickHome()" expand="block" fill="clear" shape="round">
+    Volver a Home
+  </ion-button>
+
+</ion-content>
